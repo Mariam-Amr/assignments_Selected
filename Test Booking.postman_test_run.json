@@ -1,0 +1,212 @@
+{
+	"id": "b5992593-fc37-444a-8012-0ca9c9cdd16b",
+	"name": "Test Booking",
+	"timestamp": "2024-10-14T21:38:38.441Z",
+	"collection_id": "37942802-3ee2691d-a130-4fab-a2e3-656c5e32883c",
+	"folder_id": 0,
+	"environment_id": "37942802-fe92f22a-3000-4c1b-ad64-8066b3bc1a43",
+	"totalPass": 3,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-10-14T21:38:34.929Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "15422910-3a55-4101-9f0d-5f71dceb0095",
+			"name": "create a new booking",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 179,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				179
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "c33433ef-b718-4f59-a014-cc94232ce7c5",
+			"name": "Returns the ids of all the bookings",
+			"url": "https://restful-booker.herokuapp.com/booking",
+			"time": 517,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				517
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "d2d52764-be1c-41a7-813f-6565a878da0e",
+			"name": "returns a specific booking pass",
+			"url": "https://restful-booker.herokuapp.com/booking/56",
+			"time": 176,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"First name is correct": true
+			},
+			"testPassFailCounts": {
+				"First name is correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"First name is correct": true
+				}
+			]
+		},
+		{
+			"id": "5886e482-1cc4-4337-936b-5d1484ecd022",
+			"name": "returns a specific booking fail",
+			"url": "https://restful-booker.herokuapp.com/booking/2262",
+			"time": 176,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"First name is correct": false
+			},
+			"testPassFailCounts": {
+				"First name is correct": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				176
+			],
+			"allTests": [
+				{
+					"First name is correct": false
+				}
+			]
+		},
+		{
+			"id": "98f6bd8f-dd42-438e-a052-398b22a808da",
+			"name": "Create Auth Token",
+			"url": "https://restful-booker.herokuapp.com/auth",
+			"time": 175,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				175
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d354b758-0c1d-4a85-966f-0d577003b681",
+			"name": "Update Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/3156",
+			"time": 177,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				177
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "06d17d83-a91e-428c-820d-0f826ec886f1",
+			"name": "Delete Booking",
+			"url": "https://restful-booker.herokuapp.com/booking/2262",
+			"time": 174,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				174
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1574,
+	"collection": {
+		"requests": [
+			{
+				"id": "15422910-3a55-4101-9f0d-5f71dceb0095",
+				"method": "POST"
+			},
+			{
+				"id": "c33433ef-b718-4f59-a014-cc94232ce7c5",
+				"method": "GET"
+			},
+			{
+				"id": "d2d52764-be1c-41a7-813f-6565a878da0e",
+				"method": "GET"
+			},
+			{
+				"id": "5886e482-1cc4-4337-936b-5d1484ecd022",
+				"method": "GET"
+			},
+			{
+				"id": "98f6bd8f-dd42-438e-a052-398b22a808da",
+				"method": "POST"
+			},
+			{
+				"id": "d354b758-0c1d-4a85-966f-0d577003b681",
+				"method": "PUT"
+			},
+			{
+				"id": "06d17d83-a91e-428c-820d-0f826ec886f1",
+				"method": "DELETE"
+			}
+		]
+	}
+}
