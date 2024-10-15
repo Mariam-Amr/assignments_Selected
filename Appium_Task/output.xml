@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.10.8 on win32)" generated="2024-10-15T10:28:39.888262" rpa="false" schemaversion="5">
+<suite id="s1" name="CalculatorAppTests" source="C:\Users\www\Downloads\appium\CalculatorAppTests\CalculatorAppTests.robot">
+<test id="s1-t1" name="Login With Invalid Credentials Should Fail" line="11">
+<kw name="Open Application">
+<kw name="Open Application">
+<msg time="2024-10-15T10:28:40.637087" level="FAIL">Keyword 'Open Application' expected 0 arguments, got 4.</msg>
+<arg>${PLATFORM}</arg>
+<arg>${DEVICE_NAME}</arg>
+<arg>${APP}</arg>
+<arg>${URL}</arg>
+<status status="FAIL" start="2024-10-15T10:28:40.636088" elapsed="0.000999">Keyword 'Open Application' expected 0 arguments, got 4.</status>
+</kw>
+<status status="FAIL" start="2024-10-15T10:28:40.634090" elapsed="0.003997">Keyword 'Open Application' expected 0 arguments, got 4.</status>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>addmin</arg>
+<arg>invalid_user</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-15T10:28:40.640087" elapsed="0.001000"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>12345</arg>
+<arg>wrong_password</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-15T10:28:40.642087" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<arg>login_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-15T10:28:40.642087" elapsed="0.000000"/>
+</kw>
+<kw name="Error Message Should Be Visible">
+<status status="NOT RUN" start="2024-10-15T10:28:40.643086" elapsed="0.001002"/>
+</kw>
+<doc>Test login with wrong and empty credentials.</doc>
+<status status="FAIL" start="2024-10-15T10:28:40.621093" elapsed="0.023995">Keyword 'Open Application' expected 0 arguments, got 4.</status>
+</test>
+<test id="s1-t2" name="Login With Valid Credentials Should Succeed" line="19">
+<kw name="Open Application">
+<kw name="Open Application">
+<msg time="2024-10-15T10:28:40.654086" level="FAIL">Keyword 'Open Application' expected 0 arguments, got 4.</msg>
+<arg>${PLATFORM}</arg>
+<arg>${DEVICE_NAME}</arg>
+<arg>${APP}</arg>
+<arg>${URL}</arg>
+<status status="FAIL" start="2024-10-15T10:28:40.653087" elapsed="0.000999">Keyword 'Open Application' expected 0 arguments, got 4.</status>
+</kw>
+<status status="FAIL" start="2024-10-15T10:28:40.652085" elapsed="0.003000">Keyword 'Open Application' expected 0 arguments, got 4.</status>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>username_field</arg>
+<arg>admin</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-15T10:28:40.656084" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="AppiumLibrary">
+<arg>password_field</arg>
+<arg>1234</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="NOT RUN" start="2024-10-15T10:28:40.657084" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="AppiumLibrary">
+<msg time="2024-10-15T10:28:40.658085" level="WARN">Keyword 'AppiumLibrary.Click Button' is deprecated. in selenium v4, use `Click Element` keyword.
+Click button</msg>
+<arg>login_button</arg>
+<doc>*DEPRECATED!!* in selenium v4, use `Click Element` keyword.
+Click button</doc>
+<status status="NOT RUN" start="2024-10-15T10:28:40.658085" elapsed="0.002998"/>
+</kw>
+<kw name="Calculator Activity Should Be Visible">
+<status status="NOT RUN" start="2024-10-15T10:28:40.665084" elapsed="0.000000"/>
+</kw>
+<doc>Test login with correct credentials.</doc>
+<status status="FAIL" start="2024-10-15T10:28:40.650086" elapsed="0.016999">Keyword 'Open Application' expected 0 arguments, got 4.</status>
+</test>
+<status status="FAIL" start="2024-10-15T10:28:39.894261" elapsed="0.778820"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="CalculatorAppTests">CalculatorAppTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-10-15T10:28:40.658085" level="WARN">Keyword 'AppiumLibrary.Click Button' is deprecated. in selenium v4, use `Click Element` keyword.
+Click button</msg>
+</errors>
+</robot>
